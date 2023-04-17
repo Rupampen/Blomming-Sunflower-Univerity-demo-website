@@ -1,0 +1,146 @@
+.heading {
+    
+    background-image: url(University2.jpg);
+    height: 100vh;
+    
+    -webkit-background-size: cover; 
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+} 
+
+
+.banner-text{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    justify-content: center;
+    text-justify: center;
+    color: #fff;
+}
+.navbar-brand{
+    color: #fff;
+    font-family: Kaushan Script;
+    text-shadow: 2px 2px black; 
+}
+
+.nav-item {
+    font-family: poppins;
+}
+h1 {
+    margin-top: 80px;
+    font-size: 50px; 
+    text-shadow: 3px 3px black;
+    font-family: Kaushan Script;
+    word-spacing: 13px
+}
+h2,h4{
+    font-family: poppins;
+}
+
+#ApplyNow-Login {
+    border-radius: 4px;
+    margin-top: 25px;
+    margin-right: 12px;
+    font-family: poppins;
+    font-weight:bolder;
+    background-color:#fff;
+    text-decoration:none;
+}
+/* ---------------------------------------------------------- */
+/* RESPONSIVE CSS */
+/* ---------------------------------------------------------- */
+
+
+/* For iphone 5 Potrait and Landscape view */
+@media screen and (max-device-width: 320px) 
+      and (-Webkit-min-device-pixel-ratio: 2) {
+    .UniversityName {
+           font-size: 30px;
+             
+       }
+    h2 {
+            font-size: 15px;
+       }
+
+     h4{
+           font-size: 15px;
+       }      
+}
+
+/* For mobile phones Potrait or Landscape view */
+@media screen and (min-device-width:320px) and (max-device-width: 640px) {
+    .UniversityName {
+           font-size: 50px;
+       }
+    h2 {
+            font-size: 18px;
+       }
+
+     h4{
+           font-size: 18px;
+       }      
+}
+
+/* For Mobile Landscape view */
+@media  screen and (max-device-width: 640px) and (orientation: landscape){
+
+    .UniversityName {
+        font-size: 30px;
+       }
+    h2 {
+         font-size: 13px;
+       }
+
+    h4 {
+        font-size: 13px;
+       }
+}
+
+/* For Mobile Portrait view */
+@media  screen and (max-device-width: 480px) and (orientation: portrait){
+
+    .UniversityName {
+        font-size: 50px;
+       }
+    h2 {
+         font-size: 13px;
+       }
+
+    h4 {
+        font-size: 13px;
+       }
+}
+
+/* For Tablet View */
+@media  screen and (min-device-width: 768px) and (max-device-width: 1924px){
+  
+    .UniversityName {
+        font-size: 40px;
+       }
+    h2 {
+         font-size: 18px;
+       }
+
+    h4 {
+        font-size: 18px;
+       }
+}
+
+/* For Desktop View */
+@media  screen and (min-device-width: 1024px){
+    .UniversityName {
+        font-size: 50px;
+       }
+    h2 {
+         font-size: 20px;
+       }
+
+    h4 {
+        font-size: 20px;
+       }
+}

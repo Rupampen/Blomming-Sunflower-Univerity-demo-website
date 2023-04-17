@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Blomming Sunflower University</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan Script">
+    
+    <!-- CSS files -->
+    <style>
+      body{
+        background-image: url(University2.jpg);
+      }
+        .container {
+            border: 2px solid;
+            border-radius: 4px;
+            margin-top: 30px;
+            margin-bottom: 30px; 
+            background-color: #8a8683;
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        form {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+          
+        }
+
+        .container1 {
+            border: 1px solid;
+            border-radius: 4px;
+            background-color: lightgray;
+            padding: 15px; 
+        }
+
+        .left {
+        text-align: left;
+        float: left;
+        clear: none;
+        width: 50%;
+        }
+           
+        .right {
+        text-align: right;
+        float: right;
+        clear: none;
+        width: 50%;
+        }
+         
+        #Payment {
+            text-align: right;
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            width: 150px;
+        }
+
+        #Back_Button {
+            margin-left: 30px;
+            margin-bottom: 8px;
+        }
+
+        #Next_Button {
+            margin-bottom: 8px;
+        }
+      
+    </style>
+ 
+
+  </head>
+  <body>
+      
+<div class="container">
+
+  <form>
+            <p id="Para">
+                <h2 style="color: black; font-size: 30px;">(Step 5)</h2>
+            </p>
+            <hr>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <h2 style="font-size: 20px; text-decoration-line: underline; font-weight: bold;">Review your Payment Details</h2><br>
+            <h5>10th Academic Details-</h5><br>
+            <label>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text"><br>
+            <label>Email Id: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email"><br>
+            <label>Phone No: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="tel">
+
+            <br><br><br>
+
+            <h5>Order Details-</h5>
+            <p>Application Fee: &nbsp;&nbsp;<b>Rs- 100</b></p>
+
+            <br><br>
+        </div>  
+         
+        <div class="col-md-5">
+           <div class="container1">
+                <form id="form1">
+                    <h5>Payment Details</h5>
+                    <hr>
+                    
+                    <div>
+                        <div class="left">
+                            Sub Total:
+                        </div>
+                        <div class="right">
+                            <b>Rs-</b> 100
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="left">
+                            Payment Handling Charge: 
+                        </div>
+                        <div class="right">
+                            <b>Rs-</b> 0.00
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="left">
+                            Taxes: 
+                        </div>
+                        <div class="right">
+                            <b>Rs-</b> 0.00
+                        </div>
+                    </div>
+
+                    <br><br><br><br>
+                    <div>
+                        <div class="left">
+                            <b>Total:</b>
+                        </div>
+                        <div class="right">
+                            <b>Rs- 100</b>
+                        </div>
+                    </div>
+            
+
+                    <br><br><br>
+                    <div>
+                        <button type="button" id="Payment"class="btn btn-dark" data-toggle="modal" data-target="#Make_Payment">Make Payment</button>
+                    </div>
+
+                </form>   
+           </div>
+        </div>
+      
+        
+    </div>  
+
+
+
+     <div class="ml-auto">
+        <a id="Back_Button" class="btn btn-dark" href="Admission_Form4.html" role="button" target="_blank" >Back</a>
+        <a id="Next_Button"class="btn btn-dark" href="index.html" role="button" target="_blank" >Cancel</a>
+     </div><br>
+
+  </form>     
+
+
+</div>
+
+<!--Login Modal -->
+<div class="modal fade" id="Make_Payment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Available Payment Method</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <br>
+        <div class="modal-body">
+           <div class="text-center">
+                <span>Scan this code to pay us</span><br><br>
+                <img src="QR.png" class="img-fluid" alt="Responsive image" style="align-items:center; height: 150px;"><br><br>
+                <h6>OR</h6><br>
+                <p><b>UPI ID: rupam23hours@oksbi</b></p>
+           </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
